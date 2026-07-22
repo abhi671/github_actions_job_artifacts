@@ -41,4 +41,4 @@ jobs:
         with:
           name: dist-files
       - name: Output name of downloaded files
-        run: ls -l dist
+        run: ls -l dist-files
