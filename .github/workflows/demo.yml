@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: dist-files
-          path: dist-files
+          path: dist
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -41,4 +41,4 @@ jobs:
         with:
           name: dist-files
       - name: Output name of downloaded files
-        run: ls -l dist-files
+        run: ls -l
